@@ -11,7 +11,7 @@ const refs = {
     input: document.querySelector('#input'),
 
 }
-refs.input.addEventListener('input', debounce(onSearchCountries, 500))
+refs.input.addEventListener('input', debounce(onSearchCountries, 1000))
 
 function onSearchCountries(e) {
     e.preventDefault()
